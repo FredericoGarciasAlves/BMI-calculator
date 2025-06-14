@@ -1,0 +1,382 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .sec-hero {
+  position: relative;
+  height: 65.2rem;
+  width: 144rem;
+  overflow: visible; /* só para garantir que nada seja cortado */
+  display: flex;
+  justify-content: center;
+  column-gap: 13rem;
+}
+
+/* cria um layer extra só para o gradiente */
+.main .sec-hero::before {
+  content: '';
+  position: absolute;
+  top: 0%; /* centraliza verticalmente */
+  left: 0%; /* centraliza horizontalmente */
+  width: 1002px;
+  height: 737px;
+  background: var(--gradient-1) no-repeat center/1440px 737px;
+  z-index: -1; /* fica atrás do conteúdo */
+  border-radius: 0 3rem 3rem 0;
+}
+
+.sec-hero .logo {
+  position: absolute;
+  left: 14rem;
+  top: 8.6rem;
+}
+
+.sec-hero .container-main-title {
+  width: 46.5rem;
+  margin-top: 25rem;
+}
+
+.sec-hero .container-main-title .main-title {
+  font-size: 6rem;
+  color: var(--blue-900);
+}
+
+.sec-hero .container-main-title .bmi-desc {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-top: 3.2rem;
+  color: var(--grey-500);
+}
+
+.sec-hero .box-hero {
+  margin-top: 17.6rem;
+  padding: 3.2rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 1rem 3rem 5rem #acc1de7a;
+}
+
+.box-hero .p-details {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--blue-900);
+}
+
+.box-hero .container-radio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+}
+
+.container-radio .box-radio {
+  display: flex;
+  column-gap: 1.6rem;
+  align-items: center;
+  width: 23.8rem;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 31px;
+  height: 31px;
+}
+
+.toggle-switch input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--blue-100);
+  border-radius: 20px;
+  transition: background 0.3s;
+  z-index: 1;
+}
+
+.toggle-switch .slider::before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: 8px;
+  bottom: 8px;
+  background: var(--White);
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.toggle-switch input:checked + .slider::before {
+  background: var(--blue-500);
+}
+
+.toggle-switch:hover .slider {
+  border: 1px solid var(--blue-500);
+}
+
+.toggle-switch:hover .slider::before {
+  left: 7px;
+  bottom: 7px;
+}
+
+.box-radio label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--blue-900);
+}
+
+.box-hero .container-inp-num {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 2.4rem;
+  margin-top: 3.2rem;
+}
+
+.container-inp-num .box-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-input label {
+  font-size: 1.6rem;
+  color: var(--grey-500);
+}
+
+.box-input .box-inp-num {
+  width: 23.8rem;
+  height: 6rem;
+  position: relative;
+  margin-top: 8px;
+}
+
+.box-input .box-inp-num .inp-num {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  border: 1px solid var(--grey-500);
+  padding-left: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--blue-500);
+}
+
+.box-input .box-inp-num .inp-num:hover {
+  transition: ease-in-out 0.7s;
+  border: 1px solid var(--blue-500);
+}
+.box-input .box-inp-num .inp-num:focus {
+  outline: 1px solid var(--blue-500);
+}
+
+.box-input .box-inp-num .cm,
+.box-input .box-inp-num .kg {
+  position: absolute;
+  font-weight: 700;
+  font-size: 2.4rem;
+  top: 1.55rem;
+  right: 2.4rem;
+  color: var(--blue-500);
+}
+
+.box-hero .container-bmi-result {
+  width: 50rem;
+  height: 16.6rem;
+  margin-top: 3.2rem;
+  border-radius: 1rem 12rem 12rem 1rem;
+  padding: 3.2rem;
+  background-color: var(--blue-500);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-bmi-result .box-bmi-result {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-bmi-result .your-bmi {
+  font-size: 2rem;
+  font-weight: 500;
+  width: 20rem;
+}
+
+.box-bmi-result .bmi-result {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.container-bmi-result .p-result-desc {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+.main .sec-your-result {
+  display: flex;
+  justify-content: center;
+  column-gap: 13rem;
+  position: relative;
+  width: 144rem;
+}
+
+.sec-your-result .img-your-result {
+  width: 56.4rem;
+  height: 53.3rem;
+  margin-top: 14rem;
+}
+
+.sec-your-result .box-your-result {
+  width: 46.5rem;
+  margin-top: 32.4rem;
+}
+
+.box-your-result .title-your-result {
+  font-size: 3.9rem;
+  font-weight: 700;
+  color: var(--blue-900);
+}
+
+.box-your-result .p-result {
+  font-size: 1.33rem;
+  line-height: 1.8rem;
+  margin-top: 3.2rem;
+}
+
+.sec-your-result .img-curved-left {
+  position: absolute;
+  right: 16.3rem;
+  top: 8.7rem;
+}
+
+.main .sec-tips {
+  display: flex;
+  justify-content: center;
+  margin-top: 9.6rem;
+}
+
+.sec-tips .tips-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3.2rem;
+  width: 139.2rem;
+  height: 40.2rem;
+  background: var(--gradient-1);
+  border-radius: 5rem;
+}
+
+.box-tips-content .title-tips-content {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--blue-900);
+  margin-top: 5rem;
+}
+
+.box-tips-content .p-tips-content {
+  font-size: 1.65rem;
+  color: var(--grey-500);
+  width: 36.5rem;
+  margin-top: 2.4rem;
+}
+
+.main .sec-limitations-bmi {
+  width: 144rem;
+  padding: 14.4rem;
+  padding-left: 10.4rem;
+  position: relative;
+}
+
+.sec-limitations-bmi .container-limitations-bmi {
+  display: grid;
+  grid-template-columns: repeat(2, 36.5rem);
+  gap: 3rem;
+  justify-content: right;
+}
+
+.gender {
+  grid-area: 1 / 2 / 2 / 3;
+  position: relative;
+  right: 9.6rem;
+}
+
+.age {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.muscle {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.pregnancy {
+  grid-area: 3 / 1 / 4 / 2;
+  position: relative;
+  right: 19.7rem;
+}
+.race {
+  grid-area: 3 / 2 / 4 / 3;
+  position: relative;
+  right: 19.6rem;
+}
+
+.container-limitations-bmi .content-limitations-bmi {
+  width: 36.5rem;
+  padding: 3.2rem;
+  box-shadow: 1rem 2rem 5rem #acc1de7a, 0rem -0.01rem 0.8rem #acc1de7a;
+  border-radius: 2rem;
+  padding: 3.2rem;
+}
+
+.content-limitations-bmi .box-content-limitations-bmi {
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
+}
+
+.box-content-limitations-bmi .title-content-limitatios-bmi {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--blue-900);
+}
+
+.content-limitations-bmi .p-content-limitations-bmi {
+  font-size: 1.62rem;
+  margin-top: 1.6rem;
+}
+
+.sec-limitations-bmi .container-title-limitations {
+  position: absolute;
+  top: 14.4rem;
+  left: 10.4rem;
+  width: 56.4rem;
+}
+
+.container-title-limitations .title-limitations {
+  font-size: 4.3rem;
+  color: var(--blue-900);
+}
+
+.container-title-limitations .p-limitations {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  margin-top: 3.2rem;
+}
+
+.sec-limitations-bmi .img-curved-right {
+  position: absolute;
+  top: 36.6rem;
+  left: 30.5rem;
+}
