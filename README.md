@@ -1,4 +1,3 @@
-````markdown
 # Frontend Mentor - Body Mass Index Calculator solution
 
 Está é uma solução [Body Mass Index Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T). Frontend Mentor challenges ajuda você a melhorar as suas habilidades construindo projetos realistas.
@@ -119,7 +118,8 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
-````
+
+`````
 
 ```css
 .proud-of-this-css {
@@ -143,7 +143,7 @@ Método indexOf(), encontrar um índice
 
 ````js
 let result = bmiString.indexOf('.');```
-````
+`````
 
 Converter um dado em string
 
