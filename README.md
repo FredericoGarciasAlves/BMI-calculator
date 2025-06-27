@@ -111,19 +111,18 @@ A meta: designei meta para o dia e senti uma diferença e aumento de produtivida
 
 ### O que eu aprendi
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-`````
+remover a barra lateral de scroll
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+  html,
+  body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
 }
 ```
 
@@ -143,7 +142,7 @@ Método indexOf(), encontrar um índice
 
 ````js
 let result = bmiString.indexOf('.');```
-`````
+````
 
 Converter um dado em string
 
