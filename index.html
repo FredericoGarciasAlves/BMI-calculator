@@ -56,29 +56,39 @@
             </div>
           </div>
           <div class="container-inp-num">
-            <div class="box-input">
-              <label for="inp-nam-label">Height</label>
-              <div class="box-inp-num">
-                <input
-                  type="number"
-                  name="height"
-                  id="height"
-                  class="inp-num"
-                />
-                <span class="cm">cm</span>
-              </div>
+            <div class="box-message-height">
+              <fieldset class="box-height">
+                <legend>Height</legend>
+                <div class="box-input">
+                  <div class="box-inp-num box-input-height">
+                    <input
+                      type="number"
+                      name="centimeters"
+                      id="centimeters"
+                      class="inp-num"
+                      step="1"
+                    />
+                    <span class="measurements">cm</span>
+                  </div>
+                </div>
+              </fieldset>
             </div>
-            <div class="box-input">
-              <label for="inp-nam-label">Height</label>
-              <div class="box-inp-num">
-                <input
-                  type="number"
-                  name="height"
-                  id="weight"
-                  class="inp-num"
-                />
-                <span class="kg">kg</span>
-              </div>
+            <div class="box-message-weight">
+              <fieldset class="box-weight">
+                <legend for="weight">weight</legend>
+                <div class="box-input">
+                  <div class="box-inp-num box-input-weight">
+                    <input
+                      type="number"
+                      name="kilos"
+                      id="kilos"
+                      class="inp-num"
+                      step="1"
+                    />
+                    <span class="measurements">kg</span>
+                  </div>
+                </div>
+              </fieldset>
             </div>
           </div>
           <div class="container-bmi-result">
@@ -87,8 +97,10 @@
               <span class="bmi-result">--</span>
             </div>
             <p class="p-result-desc">
-              Your BMI suggests you’re a healthy weight. Your ideal weight is
-              between <strong>63.3kgs</strong> - <strong>85.2kgs</strong>.
+              Your BMI suggests you’re a
+              <span class="description-bmi">------- ------</span>. Your ideal
+              weight is between <strong class="between-weight-low">--</strong> -
+              <strong class="between-weight-high">--</strong>.
             </p>
           </div>
         </div>
@@ -125,11 +137,13 @@
               alt="Icon Eating"
               class="img-tips-content"
             />
-            <h2 class="title-tips-content">Healthy eating</h2>
-            <p class="p-tips-content">
-              Healthy eating promotes weight control, disease prevention, better
-              digestion, immunity, mental clarity, and mood.
-            </p>
+            <div class="desc-tips-content">
+              <h2 class="title-tips-content">Healthy eating</h2>
+              <p class="p-tips-content">
+                Healthy eating promotes weight control, disease prevention,
+                better digestion, immunity, mental clarity, and mood.
+              </p>
+            </div>
           </div>
           <div class="box-tips-content">
             <img
@@ -137,11 +151,13 @@
               alt="Icon Eating"
               class="img-tips-content"
             />
-            <h2 class="title-tips-content">Regular exercise</h2>
-            <p class="p-tips-content">
-              Exercise improves fitness, aids weight control, elevates mood, and
-              reduces disease risk, fostering wellness and longevity.
-            </p>
+            <div class="desc-tips-content">
+              <h2 class="title-tips-content">Regular exercise</h2>
+              <p class="p-tips-content">
+                Exercise improves fitness, aids weight control, elevates mood,
+                and reduces disease risk, fostering wellness and longevity.
+              </p>
+            </div>
           </div>
           <div class="box-tips-content">
             <img
@@ -149,11 +165,13 @@
               alt="Icon Eating"
               class="img-tips-content"
             />
-            <h2 class="title-tips-content">Adequate sleep</h2>
-            <p class="p-tips-content">
-              Sleep enhances mental clarity, emotional stability, and physical
-              wellness, promoting overall restoration and rejuvenation.
-            </p>
+            <div class="desc-tips-content">
+              <h2 class="title-tips-content">Adequate sleep</h2>
+              <p class="p-tips-content">
+                Sleep enhances mental clarity, emotional stability, and physical
+                wellness, promoting overall restoration and rejuvenation.
+              </p>
+            </div>
           </div>
         </div>
       </section>

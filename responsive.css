@@ -1,0 +1,515 @@
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 76.8rem;
+  }
+
+  .main .sec-hero {
+    position: relative;
+    height: 100%;
+    width: 76.8rem;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    column-gap: 0rem;
+  }
+
+  .main .sec-hero::before {
+    width: 768px;
+    height: 650px;
+    background: var(--gradient-1) no-repeat center / 768px 640px;
+    border-radius: 0 0rem 6rem 0;
+  }
+
+  .sec-hero .logo {
+    width: 36px;
+    left: 36.4rem;
+    top: 3.4rem;
+  }
+
+  .sec-hero .container-main-title {
+    width: 68.6rem;
+    margin-top: 11.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sec-hero .container-main-title .main-title {
+    font-size: 4.4rem;
+    width: 34rem;
+  }
+
+  .sec-hero .box-hero {
+    margin-top: 4rem;
+    width: 68.6rem;
+  }
+
+  .box-hero .container-radio {
+    height: 3.1rem;
+  }
+
+  .container-radio .box-radio {
+    width: 29.9rem;
+  }
+
+  .box-weight legend,
+  .box-height legend {
+    font-size: 1.6rem;
+    color: var(--grey-500);
+    margin-bottom: 0.8rem;
+  }
+
+  .box-input .box-inp-num {
+    width: 29.9rem;
+    height: 7.7rem;
+  }
+
+  .box-input .box-inp-num .measurements {
+    top: 2.4rem;
+  }
+
+  .box-hero .container-bmi-result {
+    width: 62.2rem;
+    height: 14.9rem;
+  }
+
+  .box-bmi-result .bmi-result {
+    font-size: 4.5rem;
+  }
+
+  .container-bmi-result .p-result-desc {
+    width: 26.7rem;
+  }
+
+  .main .sec-your-result {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+    position: relative;
+    width: 84.1rem;
+    right: 6rem;
+    overflow: hidden;
+  }
+
+  .sec-your-result .img-your-result {
+    width: 43.5em;
+    height: 41.1rem;
+    margin-top: 8.8rem;
+  }
+
+  .sec-your-result .box-your-result {
+    width: 33.1rem;
+    height: 34.2rem;
+    margin-top: 12.2rem;
+  }
+
+  .box-your-result .title-your-result {
+    font-size: 3rem;
+  }
+
+  .box-your-result .p-result {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .sec-your-result .img-curved-left {
+    display: none;
+  }
+
+  .main .sec-tips {
+    display: flex;
+
+    justify-content: center;
+    margin-top: 9.6rem;
+  }
+
+  .sec-tips .tips-bg {
+    align-items: center;
+    flex-direction: column;
+    column-gap: 0rem;
+    row-gap: 5rem;
+    width: 76.8rem;
+    height: 50.5rem;
+    padding: 5rem 3.9rem 5rem 3.9rem;
+    background: var(--gradient-1);
+    border-radius: 0rem;
+  }
+
+  .tips-bg .box-tips-content {
+    display: flex;
+    column-gap: 4rem;
+  }
+
+  .box-tips-content .title-tips-content {
+    margin-top: 0rem;
+  }
+
+  .box-tips-content .p-tips-content {
+    width: 58.2rem;
+    margin-top: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  .main .sec-limitations-bmi {
+    width: 68.6rem;
+    padding: 0rem;
+    padding-left: 0rem;
+    position: relative;
+
+    padding-bottom: 9.5rem;
+  }
+
+  .sec-limitations-bmi .container-limitations-bmi {
+    display: grid;
+    grid-template-columns: repeat(2, 33.5rem);
+    row-gap: 2.4rem;
+    column-gap: 1.6rem;
+    justify-content: center;
+    margin-top: 29.1rem;
+  }
+
+  .gender {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    right: 0rem;
+  }
+
+  .age {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .muscle {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .pregnancy {
+    grid-area: 2 / 2 / 3 / 3;
+    position: relative;
+    right: 0rem;
+  }
+  .race {
+    grid-area: 3 / 1 / 4 / 3;
+    position: relative;
+    right: -15.5rem;
+  }
+
+  .container-limitations-bmi .content-limitations-bmi {
+    width: 33.5rem;
+    box-shadow: 1rem 1rem 3rem #acc1de7a, 0rem -0.01rem 0.3rem #acc1de7a;
+  }
+
+  .content-limitations-bmi .box-content-limitations-bmi {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+  }
+
+  .box-content-limitations-bmi .title-content-limitatios-bmi {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--blue-900);
+  }
+
+  .content-limitations-bmi .p-content-limitations-bmi {
+    font-size: 1.62rem;
+    margin-top: 1.6rem;
+  }
+
+  .sec-limitations-bmi .container-title-limitations {
+    position: absolute;
+    top: 9.6rem;
+    left: 0rem;
+    width: 68.6rem;
+    text-align: center;
+  }
+
+  .container-title-limitations .title-limitations {
+    font-size: 3rem;
+    color: var(--blue-900);
+  }
+
+  .container-title-limitations .p-limitations {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    margin-top: 3.2rem;
+  }
+
+  .sec-limitations-bmi .img-curved-right {
+    position: absolute;
+    top: 36.6rem;
+    left: 30.5rem;
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+  }
+
+  .main .sec-hero {
+    width: 37.5rem;
+    column-gap: 0rem;
+  }
+
+  .main .sec-hero::before {
+    width: 375px;
+    height: 650px;
+    background: var(--gradient-1) no-repeat center/375px 650px;
+    border-radius: 0 0rem 6rem 0;
+  }
+
+  .sec-hero .logo {
+    left: 16.8rem;
+    top: 3.2rem;
+    width: 4rem;
+  }
+
+  .sec-hero .container-main-title {
+    width: 32.8rem;
+    margin-top: 10.4rem;
+  }
+
+  .sec-hero .container-main-title .main-title {
+    font-size: 4.4rem;
+    width: 32.8rem;
+  }
+
+  .sec-hero .box-hero {
+    margin-top: 3.2rem;
+    height: 1005;
+    width: 32.8rem;
+    padding: 2.4rem;
+  }
+
+  .box-hero .p-details {
+    font-size: 2.3rem;
+  }
+
+  .box-hero .container-radio {
+    margin-top: 2.4rem;
+  }
+
+  .container-radio .box-radio {
+    width: 12.8rem;
+  }
+
+  .box-radio label {
+    font-size: 1.6rem;
+  }
+
+  .box-hero .container-inp-num {
+    flex-direction: column;
+    margin-top: 2.4rem;
+    row-gap: 1.6rem;
+  }
+
+  .container-inp-num .box-weight .box-input,
+  .container-inp-num .box-height .box-input {
+    display: flex;
+    flex-direction: column;
+    column-gap: 0rem;
+  }
+
+  .box-input .box-inp-num {
+    width: 28rem;
+    height: 7.7rem;
+    position: relative;
+  }
+
+  .box-input .box-inp-num .measurements {
+    top: 2.4rem;
+  }
+
+  .box-hero .container-bmi-result {
+    width: 28rem;
+    height: 100%;
+    margin-top: 2.4rem;
+    border-radius: 1rem;
+    padding: 3.2rem;
+    display: block;
+  }
+
+  .container-bmi-result .box-bmi-result {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-bmi-result .bmi-result {
+    font-size: 4.3rem;
+  }
+
+  .container-bmi-result .p-result-desc {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    width: 100%;
+    margin-top: 2.4rem;
+  }
+
+  .main .sec-your-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0rem;
+    width: 100%;
+    right: 0;
+  }
+
+  .sec-your-result .img-your-result {
+    width: 37.5em;
+    height: 35.4rem;
+    margin-top: 6.4rem;
+  }
+
+  .sec-your-result .box-your-result {
+    width: 32.8rem;
+    margin-top: 4.8rem;
+    height: 100%;
+  }
+
+  .box-your-result .title-your-result {
+    font-size: 2.9rem;
+  }
+
+  .box-your-result .p-result {
+    font-size: 1.65rem;
+    line-height: 2.4rem;
+  }
+
+  .sec-your-result .img-curved-left {
+    display: none;
+  }
+
+  .main .sec-tips {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    padding-bottom: 5.6rem;
+    padding-top: 5.6rem;
+  }
+
+  .sec-tips .tips-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0rem;
+    row-gap: 4rem;
+    width: 100%;
+    height: 88rem;
+  }
+
+  .tips-bg .box-tips-content {
+    display: block;
+  }
+
+  .box-tips-content .title-tips-content {
+    margin-top: 3.2rem;
+  }
+
+  .box-tips-content .p-tips-content {
+    width: 32.7rem;
+    margin-top: 2.4rem;
+  }
+
+  .main .sec-limitations-bmi {
+    width: 37.6rem;
+    padding: 8.2rem 2.9rem 9.6rem 1.9rem;
+    padding-left: 1.9rem;
+    position: relative;
+  }
+
+  .sec-limitations-bmi .container-limitations-bmi {
+    display: grid;
+    grid-template-columns: repeat(1, 32.7rem);
+    gap: 1.6rem;
+    justify-content: right;
+    margin-top: 35rem;
+  }
+
+  .gender {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    right: 0rem;
+  }
+
+  .age {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .muscle {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .pregnancy {
+    grid-area: 4 / 1 / 5 / 2;
+    position: relative;
+    right: 0rem;
+  }
+  .race {
+    grid-area: 5 / 1 / 6 / 2;
+    position: relative;
+    right: 0rem;
+  }
+
+  .container-limitations-bmi .content-limitations-bmi {
+    width: 32.7rem;
+    padding: 0rem;
+    border-radius: 2rem;
+    padding: 2.4rem;
+  }
+
+  .content-limitations-bmi .box-content-limitations-bmi {
+    display: flex;
+    align-items: center;
+    column-gap: 1.6rem;
+  }
+
+  .box-content-limitations-bmi .title-content-limitatios-bmi {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--blue-900);
+  }
+
+  .content-limitations-bmi .p-content-limitations-bmi {
+    font-size: 1.62rem;
+    margin-top: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  .sec-limitations-bmi .container-title-limitations {
+    position: absolute;
+    top: 8.2rem;
+    left: 1.6rem;
+    width: 32.7rem;
+  }
+
+  .container-title-limitations .title-limitations {
+    font-size: 2.9rem;
+    color: var(--blue-900);
+  }
+
+  .container-title-limitations .p-limitations {
+    font-size: 1.65rem;
+    line-height: 2.4rem;
+  }
+
+  .sec-limitations-bmi .img-curved-right {
+    display: none;
+  }
+}

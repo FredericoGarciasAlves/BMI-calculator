@@ -6,7 +6,7 @@
 
 .main .sec-hero {
   position: relative;
-  height: 65.2rem;
+  height: 100%;
   width: 144rem;
   overflow: visible; /* só para garantir que nada seja cortado */
   display: flex;
@@ -52,6 +52,7 @@
 
 .sec-hero .box-hero {
   margin-top: 17.6rem;
+  height: 100%;
   padding: 3.2rem;
   background-color: var(--white);
   border-radius: 1rem;
@@ -67,7 +68,7 @@
 .box-hero .container-radio {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.5rem;
+  margin-top: 3.2rem;
 }
 
 .container-radio .box-radio {
@@ -145,22 +146,36 @@
   column-gap: 2.4rem;
   margin-top: 3.2rem;
 }
-
-.container-inp-num .box-input {
-  display: flex;
-  flex-direction: column;
+.container-inp-num .box-weight,
+.container-inp-num .box-height {
+  border: none;
 }
 
-.box-input label {
+.container-inp-num .box-weight .box-input,
+.container-inp-num .box-height .box-input {
+  display: flex;
+  column-gap: 2.4rem;
+}
+.container-inp-num .box-message-height .message-max-height,
+.container-inp-num .box-message-height .message-min-height,
+.container-inp-num .box-message-weight .message-max-weight,
+.container-inp-num .box-message-weight .message-min-weight {
+  color: var(--blue-500);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.box-weight legend,
+.box-height legend {
   font-size: 1.6rem;
   color: var(--grey-500);
+  margin-bottom: 1rem;
 }
 
 .box-input .box-inp-num {
   width: 23.8rem;
   height: 6rem;
   position: relative;
-  margin-top: 8px;
 }
 
 .box-input .box-inp-num .inp-num {
@@ -168,10 +183,9 @@
   height: 100%;
   border-radius: 1.5rem;
   border: 1px solid var(--grey-500);
-  padding-left: 2rem;
+  padding-left: 2.4rem;
   font-size: 2.2rem;
   font-weight: 700;
-  color: var(--blue-500);
 }
 
 .box-input .box-inp-num .inp-num:hover {
@@ -182,8 +196,7 @@
   outline: 1px solid var(--blue-500);
 }
 
-.box-input .box-inp-num .cm,
-.box-input .box-inp-num .kg {
+.box-input .box-inp-num .measurements {
   position: absolute;
   font-weight: 700;
   font-size: 2.4rem;
@@ -224,7 +237,7 @@
 
 .container-bmi-result .p-result-desc {
   font-size: 1.6rem;
-  line-height: 2.2rem;
+  line-height: 2.1rem;
 }
 
 .main .sec-your-result {
