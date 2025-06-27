@@ -20,9 +20,8 @@ Está é uma solução [Body Mass Index Calculator challenge on Frontend Mentor]
   - [Contruido Com](#contruido-com)
   - [O que eu aprendi](#o-que-eu-aprendi)
   - [Continuar desenvolvendo](#continuar-desenvolvendo)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Autor](#autor)
+- [Agradescimentos](#agradescimentos)
 
 ## Visão geral
 
@@ -48,8 +47,8 @@ Usuários devem conseguir:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [BMI calculator](https://github.com/FredericoGarciasAlves/BMI-calculator)
+- Live Site URL: [BMI calculator](https://fredericogarciasalves.github.io/BMI-calculator/)
 
 ## Meu Processo
 
@@ -128,43 +127,63 @@ To see how you can add code snippets, see below:
 }
 ```
 
+Pegar valores de outra maneira mais concisa de um objeto
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
+const { min, max } = limits[name];
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Método slice() para pegar uma parte de uma string ou lista
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-
+```js
+return bmiString.slice(0, 3);
 ```
 
+Método indexOf(), encontrar um índice
+
+````js
+let result = bmiString.indexOf('.');```
+````
+
+Converter um dado em string
+
+```js
+const bmiString = bmi.toString();
 ```
+
+Método matches() retorna um valor booleano verificando se o elemento contem seletoresString, nesse caso foi mais de um a **','** funciona como **OR**
+
+```js
+!el.matches(
+  'input[name="feet"], input[name="inches"], input[name="stones"], input[name="libras"]'
+);
+```
+
+Eventos keydown
+
+```js
+inputCentimeters.addEventListener('keydown', (e) => {
+  if (e.key === '.' || e.key === ',' || e.key === 'e' || e.key === 'E') {
+    e.preventDefault();
+  }
+});
+```
+
+além disso aprendi a praticar
+
+### Continuar Desenvolvendo
+
+Fazer a seção 'O que o seu BMI diz' dinâmicamente conforme o resultado do BMI, e fazer o calculo exato para mostrar a mensagem de máxima e mínima, altura e peso.
+
+## Autor
+
+- YouTube - [Valdevorte](https://www.youtube.com/@valdevorte2702)
+- Frontend Mentor - [@FredericoGarciasAlves](https://www.frontendmentor.io/profile/FredericoGarciasAlves)
+- Twitter - [@FredericoGA70](https://x.com/FredericoGA70)
+- Facebook - [Fred Garcias](https://www.facebook.com/fred.garcias.1)
+- instagram - [@fred_alves23](https://www.instagram.com/fred_alves23/)
+- Linkedin - [frederico garcias alves](https://www.linkedin.com/in/frederico-garcias-alves-8730722b5/)
+
+## Agredescimentos
+
+Agradescimento a pai e mãe, chatGPT, e a **DEUS**
